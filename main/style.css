@@ -1,7 +1,51 @@
-#mep {
-  color: darkblue;
+::before{
+  margin: 0px;
 }
 
-#myBtn {
-  color: pink;
+body{
+  margin: 0px;
 }
+
+p{
+  margin: 0px;
+}
+
+button {
+  font-size: larger;
+  font-weight: bolder;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  width: 100px;
+  height: 80px;
+}
+
+section {
+  margin: auto;
+  width: 50%;
+  margin-bottom: 100px;
+}
+table {
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  margin: auto;
+  width: 75%;
+}
+
+#_textarea {
+  font-size: xx-large;
+  margin-right: 0px;
+  width: 400px;
+  height: 100px;
+  color: rgba(163, 168, 114, 0.5);
+  text-align: right;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+p:empty:not(:focus)::before {
+  content: attr(data-placeholder);  
+}
+
