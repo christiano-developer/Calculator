@@ -10,7 +10,8 @@ const arroFcals = [
 for (let i = 0; i < btn.length; i++) {
   btn[i].addEventListener('click', function () {
 
-    console.log(btn[i].textContent)
+    //console.log(btn[i].textContent)
+    
     textArea.textContent += btn[i].textContent
     document.getElementById("_textarea").style.color = "black";
   });
