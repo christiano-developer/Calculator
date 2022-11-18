@@ -15,27 +15,31 @@ button {
 }
 
 section {
+  border: 1px solid black;
   margin: auto;
   width: 50%;
   margin-bottom: 100px;
 }
 table {
+  border: 1px solid black;
   margin: auto;
 }
 
 footer {
+  border: 1px solid black;
   text-align: center;
   margin: auto;
   width: 75%;
 }
 
 #textdiv{
+  border: 1px solid black;
   margin: auto;
-  width: 65%;
+  width: 26rem;
 }
 
 #_textarea {
-  
+  border: 1px solid black;
   font-size: xx-large;
   height: 100px;
   color: rgba(163, 168, 114, 0.5);

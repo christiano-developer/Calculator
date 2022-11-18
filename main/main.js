@@ -1,29 +1,38 @@
-let btn = document.getElementsByClassName("btn")
-let clear = document.getElementById("_clear")
-let textArea = document.getElementById("_textarea")
+let btn = document.getElementsByClassName("btn")      //arry of class
+let clear = document.getElementById("_clear")         //All Clear
+var textArea = document.getElementById("_textarea")   //textarea  
+let backSpace = document.getElementById("backspace")
 
-const arroFcals = [
-  "(", ")", "%", "AC", "7", "8", "9", "÷", "4", "5", "6", "×", "1", "2", "3", "−", "0", ".", "=", "+"
-]
+let bckAfter = ""
+
 
 
 for (let i = 0; i < btn.length; i++) {
   btn[i].addEventListener('click', function () {
+    
 
-    console.log(btn[i].textContent)
-    console.log(ggb)
     textArea.textContent += btn[i].textContent
-    document.getElementById("_textarea").style.color = "black";
-    textArea.textContent = truncateText('p', 31)
+    
+    document.getElementById("_textarea").style.color = "black"
+    textArea.textContent = truncateText('p', 30)
+
   });
 }
 
 
 //All Clear
 clear.addEventListener("click", function(){
-
   textArea.textContent = ""
   document.getElementById("_textarea").style.color = "rgba(163, 168, 114, 0.5)";
+})
+
+// Back Space
+
+backSpace.addEventListener("click", function(){
+  console.log(textArea.textContent.length)
+  console.log(textArea.textContent)
+
+  textArea.textContent = textArea.textContent.substring(0, textArea.textContent.length -1)
 })
 
 
@@ -41,8 +50,9 @@ function truncateText(p, maxLength) {
 
 
 
-let gga = document.getElementById("test")
-let ggb = gga.getAttribute("value")
+
+
+
 
 
 
