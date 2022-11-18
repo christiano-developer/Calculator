@@ -14,8 +14,8 @@ for (let i = 0; i < btn.length; i++) {
 
     textArea.textContent += btn[i].textContent
     solveItArea += btn[i].value
-    document.getElementById("_textarea").style.color = "black"
-    textArea.textContent = truncateText('p', 30)
+    document.getElementById("_textarea").style.color = "white"
+    textArea.textContent = truncateText('p', 20)
 
   });
 }
@@ -25,7 +25,7 @@ for (let i = 0; i < btn.length; i++) {
 clear.addEventListener("click", function(){
   textArea.textContent = ""
   solveItArea = ""
-  document.getElementById("_textarea").style.color = "rgba(163, 168, 114, 0.5)";
+  document.getElementById("_textarea").style.color = "rgba(128, 128, 128, 0.5)";
 })
 
 // Back Space
@@ -34,7 +34,7 @@ backSpace.addEventListener("click", function(){
 
   solveItArea = solveItArea.substring(0, textArea.textContent.length -1)
   if(textArea.textContent == "")
-    document.getElementById("_textarea").style.color = "rgba(163, 168, 114, 0.5)";
+    document.getElementById("_textarea").style.color = "rgba(128, 128, 128, 0.5)";
 })
 
 
@@ -53,6 +53,8 @@ function truncateText(p, maxLength) {
 
 //solve it
 solveIt.addEventListener("click", function(){
+
+  textArea.textContent = eval(solveItArea)
   console.log(eval(solveItArea))
   
 })

@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta name="Calculator" content="basic?">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
     <title>Calculator</title>
   </head>
   <body>
     
     <section>
       <div id="textdiv">
-        <p id="_textarea" data-placeholder="Calculator"></p>
+        <p id="_textarea"></p>
       </div>
-      <div>
+      <div id="button_div">
         <table>
           <Tr>
             <td>
-              <button class="btn" value="(">(</button>
+              <button class="btn b_orange" value="(">(</button>
             </td>
             <td>
-              <button class="btn" value=")">)</button>
+              <button class="btn b_orange" value=")">)</button>
             </td>
             <td>
               <button id="backspace">CE</button>
@@ -40,7 +42,7 @@
               <button class="btn" value="9">9</button>
             </td>
             <td>
-              <button class="btn" value="/">÷</button>
+              <button class="btn b_orange" value="/">÷</button>
             </td>
           </Tr>
           <Tr>
@@ -54,7 +56,7 @@
               <button class="btn" value="6">6</button>
             </td>
             <td>
-              <button class="btn" value="*">×</button>
+              <button class="btn b_orange" value="*">×</button>
             </td>
           </Tr>
           <Tr>
@@ -68,7 +70,7 @@
               <button class="btn" value="3">3</button>
             </td>
             <td>
-              <button class="btn" value="-">−</button>
+              <button class="btn b_orange" value="-">−</button>
             </td>
           </Tr>
           <Tr>
@@ -79,16 +81,16 @@
               <button class="btn" value=".">.</button>
             </td>
             <td>
-              <button id="solve" >=</button>
+              <button class="b_orange" id="solve" >=</button>
             </td>
             <td>
-              <button class="btn" value="+">+</button>
+              <button class="btn b_orange" value="+">+</button>
             </td>
           </Tr>
         </table>
       </div>
     </section>
-    <footer>Made @mydesktop</footer>
+    <footer id="profile"><a href="https://github.com/christiano-developer" target="_blank">@mydesktop</a></footer>
     <script src="main.js"></script>
   </body>
 </html>
