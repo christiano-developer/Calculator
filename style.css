@@ -18,6 +18,7 @@ button {
   width: 100px;
   height: 100px;
   border-radius: 100%;
+
 }
 
 section {
@@ -88,4 +89,15 @@ footer{
   font-size: 12pt;
   color: #ffa500;
   text-decoration: none;
+}
+
+@media (max-width: 390px){
+  body{
+    scale: .8;
+  }
+  section{
+    min-width: 100%;
+  }
+
+
 }
