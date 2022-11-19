@@ -94,6 +94,7 @@ footer{
 @media (max-width: 390px){
   body{
     scale: .5;
+    margin-right: 50px;
   }
   section{
     min-width: 100%;
